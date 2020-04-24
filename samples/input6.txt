@@ -1,0 +1,11 @@
+# only Assemblies
+addAssembly Argument 20
+addAssembly Ambivalent 10
+addAssembly Azure 31
+stock Azure 50
+inventory
+empty Azure
+stock Azure 15
+inventory
+restock
+inventory

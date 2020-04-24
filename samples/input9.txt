@@ -1,0 +1,10 @@
+addPart P1
+addPart P2
+addAssembly Ay 3 P1 2
+addAssembly Az 6 P1 3 P2 5
+addAssembly Ax 30 Ay 3 Az 4
+addAssembly Aw 5 Az 2 P1 3 Ax 4
+restock
+inventory
+fulfillOrder Aw 9
+inventory

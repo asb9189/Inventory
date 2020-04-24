@@ -1,0 +1,6 @@
+# add only parts
+addPart Penny
+addPart Piglet
+addPart Part
+addPart Pen
+parts
