@@ -1,0 +1,272 @@
+commit 6c56e9460af1c918850459270dbf6edcbcbe59c9
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Thu Apr 23 21:30:22 2020 -0400
+
+        As of now I have successfully completed Project 2! I pass all of
+        try's tests, sample tests provided to us from the documentation and
+        valgrind produces no memory leaks.
+
+commit 5a13b7f2e20c9b26470406c0bc762e0489410d4d
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Thu Apr 23 18:47:40 2020 -0400
+
+        Finally passed all try diff's! I did my best to simplify methods
+        that were using repeated code / excessively complex. I also fixed ALL
+        lines over 80 characters. The only test cases I get memory leaks is
+        input9.txt and input10.txt. Hopfully I can find a solution to these by
+        tonight however I am not too worried as I am very happy with my current
+        project.
+
+commit 420c6e50ff43f99bba72f926c42b10eab5190748
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Wed Apr 22 20:59:23 2020 -0400
+
+        Fixed all memory leaks except for input9.txt. I can't seem to figure
+        out whats not being released when looking at valgrinds output. Same goes
+        for the last diff that I still cannot figure out. Otherwise, in a great
+        place!
+
+commit e33115291ae90e78646a3f6fcfaa8e5a4139b11f
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Sun Apr 19 12:04:39 2020 -0400
+
+        Implemented the clear method and passed another try input. Now I
+        only have one diff and still cant figure out whats causing the out of
+        order issue within the restock method.
+    
+        I believe I have the reverse linked list method working properly but
+        its the assmeblies items / sub assemblies that become restocked in wrong
+        order.
+
+commit 696c7cb5886c0e7b84a14bee3b79e9ebb2ca68e7
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Sat Apr 18 14:37:21 2020 -0400
+
+        Forgot to implement the clear method so that will need to be done
+        shortly. I also cut down on the diff's so now I only have two diff's to
+        deal with.
+    
+        Also I have not yet documented my work.
+
+commit ebba195dfc20c2f7db80c41eec992a1fa23d0247
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Thu Apr 16 20:04:26 2020 -0400
+
+        After attempting to submit to try I only get two diff's. Both of
+        which are fairly confusing but not very long. I have a good idea on
+        whats causing one of the diff's but the other one I have absolutly no
+        clue what it is. Either way it shouldent take more than a couple of
+        hours to be able to submit with no diff!
+
+commit 5fe31a974fa64d650f299bb27dbefc5738c84ce7
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Wed Apr 15 22:01:12 2020 -0400
+
+        Fixed all errors and the program now reads fishing properly. However
+        I am still getting a very tiny difference in input9 and I can only
+        imagine it has to do with the way I traverse the linked list in reverse
+        (flipping the list 2x).
+
+commit b37332583c9a6f9a9c95226372840af419cbfed9
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Wed Apr 15 21:02:45 2020 -0400
+
+        Implemented all the sorting algos correctly. Only bug I can find is
+        the ordering that is printed from the restock request. All output
+        matches tests exactly except for the order it shows ">>> make ..." so
+        that is something to look into prior to testing it on try.
+    
+        Besides that the only other bug I am aware of is while reading commented
+        files. Sometimes It does not parse the request correctly causing a
+        segfault.
+
+commit 60f4d5c8677391514d4bc597e34e0d05e7ec6825
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Wed Apr 15 19:49:45 2020 -0400
+
+        Implemented all sorting functions and got it working with the parts
+        request. However, I have not yet implemented qsort in any other function
+        so completing this will be tonights task.
+
+commit e8ba0c5ed8bcc3e7ee0e6b0937951745b73f5697
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Tue Apr 14 12:52:59 2020 -0400
+
+        Fixed all noticable bugs except for sorting. Passed all test's with
+        the correct parts needed and inventory displays!
+
+commit 46438596d4ebb13f94bb73031c479b3f01a01e0d
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Mon Apr 13 22:43:14 2020 -0400
+
+        Passed test no. 7 checking for errors. During test 8 I end with the
+        same results in the inventory however my parts needed is not printing as
+        it shows everytime the item_count == 0. Once I get to the bottom of this
+        I should have identical output to all test cases excluding sorting.
+
+commit 3a2c8f0df866d95a55cd18be65ccc96d6cb09994
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Mon Apr 13 15:33:49 2020 -0400
+
+        Passed test input 6 after implementing stock and restock functions.
+        Also had to implement a reverse linked list in order to start from the
+        end and work my way to the front of the list with the restock function.
+    
+        up next is fulfillorder and then a bunch of bebugging until it seems
+        that everything is working. The way I increment on_hand dosent seem to
+        be in the right spot but it does work as expected as of now.
+
+commit b4f5afdc179359ebebca3028b88f068c6d59a359
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Sun Apr 12 20:05:40 2020 -0400
+
+        Fixed duplicates in addAssembly as well as neumerous other bugs such
+        as item_count not being incremented properly.
+
+commit 69fca18581485f6e2be324f42f9ef0120a227b5f
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Sun Apr 12 19:16:02 2020 -0400
+
+        I seemed to fix the error with allowing users to addAssembly with
+        non existant assembly ID's or part ID's. I don't see how this
+        changes the outcome of the program as it seems to work fine without
+        making the changes but hopfully its only there for realism and not
+        functionality.
+
+commit a58143ad394ae7b23e9f32b1bfa7ce8532cf2c3c
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Sun Apr 12 18:31:28 2020 -0400
+
+        So far the stock request is working as it should. HOWEVER, I noticed
+        a huge flaw in my program were users can addAssembly [assembly id] that
+        does not already exist. I never noticed this before as my program checks
+        if its a valid assembly ID but not an actual valid assembly. This should
+        be an easy check however I cant see how much of my code might need
+        slight tweaking or not.
+    
+        Same goes for addAssembly [part id]
+
+commit 1a834ae36260ac209c9dbee6aaefbd3e4d748f30
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Sun Apr 12 12:38:12 2020 -0400
+
+        Implemented the get function. Everything compiles ok and now it is
+        time to test them by implementing one of the last big three methods. I
+        might tackle stock next as it seems the easiest.
+
+commit 2ddaa503f5af8abefb034fdd1b49fd259bdb6a06
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Sun Apr 12 12:11:00 2020 -0400
+
+        Implemented the make method however I have not tested it yet. Next
+        up is implementing the get method.
+
+commit c849fa97a0727a8b2d97e8499ba49ea9fa524119
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Sat Apr 11 19:45:37 2020 -0400
+
+        Implemented the add_item helper function as this is requried for the
+        last three functions: stock, fulfillorder, and restock.
+
+commit 92a8f20a2a648204500b37ec529fa95e4918e212
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Sat Apr 11 19:19:40 2020 -0400
+
+        Added help request and error checking in the stock method.
+
+commit 77c248d0d4e35f499d902efb1329a66bfda3f6ae
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Fri Apr 10 15:19:58 2020 -0400
+
+        Fixed the table formatting issue. So now when calling inventory all
+        assembly ID's and there cap, on hand values are printing in align with
+        the table.
+
+commit b7c5671a7f6e57e2aa3308988916868a24cf6122
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Sun Mar 15 11:33:29 2020 -0400
+
+        Finished implemented addAssembly, Inventory, and empty. I will have
+        to go back and implement sorting and test for memory leaks. But as of
+        now I am executing inventory matching my output with the expected output.
+
+commit 2ff4201ea5eefc084e1f9cc8bdb5c17b26cc61b8
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Sun Mar 15 11:17:26 2020 -0400
+
+        Fixed two bugs with addAssembly. Now you cannot add duplicate ID's
+        and searching for an ID to retrieve its information to print works as
+        expected now.
+
+commit afa38b6128f1b27f30c9ae2c4bf9ea6ed5df16db
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Fri Mar 13 14:36:02 2020 -0400
+
+        Added more error checking in addAssembly. However when calling
+        inventory with an ID it sometimes cannot find the struct so that must be
+        fixed before moving on. Everything else works as expected (thus far).
+
+commit 0ac3d1affcb06a48e4a8d4f2e7642ac2b94ee5c1
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Fri Mar 13 01:13:36 2020 -0400
+
+        Implemented addAssembly and it seems to be working as expected.
+        However, my inventory request prints the numbers out of alignment with
+        the colums and does not print '*' to denote they can be refilled just
+        yet.
+
+commit ae98e7a69075437ee564d49d390d9cbb50f9238d
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Thu Mar 12 23:03:49 2020 -0400
+
+        Fixed bug were single commands such as inventory would be tokenized
+        when not needed. This would lead to crazy results so I implemented a
+        simple to check to see if the request is a single word (no spaces after
+        trimming) and if so dont tokenize it. This fixed the issue!
+
+commit 0c3daf9d48e41d0e77921abb7b665a4afc39ba8b
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Thu Mar 12 13:59:09 2020 -0400
+
+        Implemented addAssembly however it does not check if its already in
+        the inventory struct yet. Also, I have not implemented the adding part
+        of the method only the error checking.
+    
+        So far the error checking is working as expected.
+
+commit efa2eb3051bc9de83577d51674104da48d51118d
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Wed Mar 11 20:47:10 2020 -0400
+
+        Implemented the addPart, parts, and quit requests however parts does
+        not sort the parts before printing. All error checking is included in
+        addPart and works as expected.
+
+commit f987241510ccf7c055be4e934d8b1322f0c6c62a
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Tue Mar 10 23:25:07 2020 -0400
+
+        The program now reads line by line skipping blank entries, printing
+        all non empty with a + infront of it while also removing the comments in
+        these entries. I have yet to make the stub functions for each type of
+        command and still need to figure out the stdin issue before moving
+        further.
+
+commit 8e1b33540f50e0161a7dd3aab1b7ecf77b52dd52
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Tue Mar 10 20:48:42 2020 -0400
+
+        I defined my inventory struct as a global variable creating less
+        hassle when trying to pass it through other functions. I also can read
+        line by line from a file using the getline() function from the given
+        header file. However, while my program does allow for user input from
+        the stdin it dosent work as expected as it handles the information one
+        line at a time and dosent give the user the chance to type the entire
+        "file contents" before ctrl + D.
+
+commit cb1a35d7bf1308b3e5ba47f9b0fe1f40d46718df
+Author: Aleksei S Bingham <asb9189@cs.rit.edu>
+Date:   Mon Mar 9 21:10:18 2020 -0400
+
+        Created inventory.c, added a default main method, and generated its
+        Makefile using gmakemake > Makefile.
