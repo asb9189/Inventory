@@ -1,2 +1,0 @@
-parts      # NO PARTS
-inventory  # EMPTY INVENTORY
