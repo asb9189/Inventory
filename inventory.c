@@ -1,5 +1,5 @@
 
-//@Author Aleksei Bingham (asb9189)
+//@Author Aleksei Bingham
 
 //Project Description: Inventory is a massive c driven project
 //that simulates a generic company and allows for the manufacturing
